@@ -1,0 +1,286 @@
+/* ========= GLOBAL STYLES ========= */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background: #EAB0BB;
+  background: linear-gradient(159deg, rgba(234, 176, 187, 1) 0%, rgba(222, 222, 180, 1) 50%, rgba(127, 168, 45, 1) 100%);  color: #4A5630; 
+  margin: 0;
+  padding: 0;
+}
+
+/* ========= PROFILE (TOP-LEFT) ========= */
+.profile-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #FFF;
+  border: 2px solid #EAB0BB;
+  border-radius: 25px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 10px rgba(196, 109, 134, 0.15);
+  width: 230px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(196, 109, 134, 0.25);
+}
+
+.profile-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #EAB0BB;
+  display: block;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(234, 176, 187, 0.3);
+}
+
+.name-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #C46D86;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.profile-container p {
+  font-size: 14px;
+  color: #4A5630;
+  margin: 4px 0;
+}
+
+.profile-container i {
+  color: #C46D86;
+  margin-right: 6px;
+}
+
+/* ========= NAVIGATION (TOP-RIGHT) ========= */
+.navbar {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  background-color: #FFF;
+  border: 2px solid #EAB0BB;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(196, 109, 134, 0.15);
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #C46D86;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #4A5630;
+}
+
+/* ========= SECTIONS (About, Skills, Projects, Recommendations) ========= */
+section {
+  max-width: 900px;
+  margin:  60px auto;
+  background-color: #FFF;
+  border-radius: 25px;
+  padding: 30px;
+  border: 2px solid #EAB0BB;
+  box-shadow: 0 4px 10px rgba(196, 109, 134, 0.15);
+}
+
+h1, h2 {
+  color: #C46D86;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #4A5630;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+/* ========= SKILL CARDS ========= */
+#skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.skill-card {
+  text-align: center;
+  width: 150px;
+  border: 1.5px solid #EAB0BB;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(196, 109, 134, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.skill-card img {
+  width: 50px;
+  height: 45px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card p {
+  color: #4A5630;
+}
+
+/* ========= PROJECTS ========= */
+.project h3 {
+  color: #C46D86;
+  margin-bottom: 5px;
+}
+
+.project p {
+  border-bottom: 1px solid #EAB0BB;
+  padding-bottom: 10px;
+}
+
+/* ========= RECOMMENDATIONS ========= */
+#recommendations {
+  text-align: center;
+}
+
+.recommend-card {
+  display: inline-block;
+  width: 250px;
+  border: 1.5px solid #EAB0BB;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(196, 109, 134, 0.15);
+  font-style: italic;
+}
+
+/* ========= ADD RECOMMENDATION FORM ========= */
+#add-recommendation {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#recommendationForm textarea {
+  width: 80%;
+  height: 100px;
+  border-radius: 10px;
+  border: 1.5px solid #EAB0BB;
+  padding: 10px;
+  resize: none;
+  font-family: inherit;
+}
+
+#recommendationForm button {
+  background-color: #C46D86;
+  color: #FFF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#recommendationForm button:hover {
+  background-color: #4A5630;
+}
+
+/* ========= HOME ICON ========= */
+.home-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #FFF;
+  border: 2px solid #EAB0BB;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(196, 109, 134, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.home-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.home-icon:hover {
+  transform: scale(1.1);
+}
+
+/* ========= POPUP MESSAGE ========= */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  border: 2px solid #EAB0BB;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(196, 109, 134, 0.3);
+  padding: 30px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.popup p {
+  color: #4A5630;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.popup button {
+  background-color: #C46D86;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #4A5630;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  .profile-container, .navbar {
+    position: static;
+    width: auto;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    margin-top: 30px;
+  }
+}

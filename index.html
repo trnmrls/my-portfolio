@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trine's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========= PROFILE SECTION (TOP-LEFT) ========= -->
+  <div class="profile-container">
+    <img src="img/trn.png" alt="Profile Image">
+    <div class="name-label">Trine Morales</div>
+    <p><i class="fa fa-envelope"></i> trine.mrls@gmail.com</p>
+    <p><i class="fa fa-phone"></i>099123456</p>
+  </div>
+
+  <!-- ========= NAVBAR (TOP-RIGHT) ========= -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========= ABOUT ME ========= -->
+  <section id="about">
+    <h1>About Me ! 𐔌՞. .՞𐦯</h1>
+    <p>I'm Trine Morales ! Currently a sophomore BS Information Technology student at University of Santo Tomas. I live in the Philippines and love appreciating its nature! My hobbies are photography, watching movies, and listening to music. </p>
+</section>
+
+  <!-- ========= SKILLS ========= -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-card">
+      <img src="img/html.jpg" alt="HTML Logo">
+      <p>3 months experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="img/js.png" alt="JavaScript Logo">
+      <p>3 months experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="img/java.png" alt="Java Logo">
+      <p>3 months experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="img/sql.png" alt="SQL Logo">
+      <p>3 months experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="img/css.jpg" alt="CSS Logo">
+      <p>3 months experience</p>
+    </div>
+  </section>
+
+  <!-- ========= PROJECTS ========= -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio</h3>
+      <p>Developed a website to showcase my skills and introduce myself as a person to everyone.</p>
+    </div>
+    <div class="project">
+      <h3>Function Website</h3>
+      <p>Created an embedded script that accepts functions that accept 5 names through prompt box and displayed it in the page the list of the names initially as they were inputted. Then, redisplay it in reverse. Also wrote an external JavaScript function that accepts a string as a parameter and find the longest word within the string, accepts two integers and displays the larger number, and displays a random image one at a time via clicking on a button.</p>
+    <div class="project">
+      <h3>In progress... a Cafe Website</h3>
+      <p>Designed a multi-page cafe business website with seamless order form and dynamic galleries.</p>
+    </div>
+  </section>
+
+  <!-- ========= RECOMMENDATIONS ========= -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div class="recommend-card">“Trine is a very quick learner and quickly grasps the tasks given to her...”</div>
+    <div class="recommend-card">“Working with Trine has been an awesome experience, she has been the light of the group...”</div>
+    <div class="recommend-card">“I had worked along with Trine during the every phase of making a website and it has been a good ride!...”</div>
+  </section>
+
+    <!-- ========= ADD RECOMMENDATION FORM ========= -->
+  <section id="add-recommendation">
+    <h2>Leave a Recommendation</h2>
+    <form id="recommendationForm">
+      <textarea id="recommendText" placeholder="Write your recommendation here..." required></textarea><br>
+      <button type="submit">Submit Recommendation</button>
+    </form>
+  </section>
+
+  <!-- ========= HOME ICON ========= -->
+  <a href="#about" class="home-icon" title="Go Home">
+    <img src="img/home.png" alt="Home Icon">
+  </a>
+
+  <!-- ========= POPUP MESSAGE ========= -->
+  <div id="popup" class="popup">
+    <p>Thank you for leaving a recommendation!</p>
+    <button id="closePopup">OK</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
